@@ -10,8 +10,8 @@ class Triangle
   def kind 
     if (@side1 == 0) || (@side2 == 0) || (@side1 == 0)
       begin
-        raise PartnerError
-      rescue PartnerError
+        raise TriangleError
+      rescue TriangleError
       end
     elsif (@side1 == @side2) && (@side2 == @side3)
       :equilateral
