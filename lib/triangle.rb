@@ -11,8 +11,7 @@ class Triangle
     if (@side1 == 0) || (@side2 == 0) || (@side1 == 0)
       begin
         raise PartnerError
-      rescue PartnerError => error
-        puts error.message
+      rescue PartnerError
       end
     elsif (@side1 == @side2) && (@side2 == @side3)
       :equilateral
